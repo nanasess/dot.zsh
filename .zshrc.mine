@@ -1,0 +1,5 @@
+# -*- mode:shell-script -*-
+
+export EDITOR=$HOME/Applications/Emacs.app/Contents/MacOS/bin/emacsclient
+
+export PATH=$HOME/bin:$HOME/.cabal/bin:/Library/Frameworks/HaskellPlatform.framework/bin:$HOME/Applications/pTeX.app/teTeX/bin:/opt/local/bin:/usr/local/bin:$PATH

@@ -2,10 +2,8 @@
 
 * See Also.
 
-http://arq.name/cygmake/cygwin/zshrc.html
-http://masutaka.net/chalow/2011-09-28-1.html
-
->>> ~/.zsh/README
+ - [[http://arq.name/cygmake/cygwin/zshrc.html]]
+ - [[http://masutaka.net/chalow/2011-09-28-1.html]]
 
 # Local Variables:
 # coding: utf-8-unix
