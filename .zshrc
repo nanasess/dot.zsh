@@ -2,8 +2,8 @@
 #
 # dot.zshrc
 #
-source $ZDOTDIR/.zaliases
-source $ZDOTDIR/.zcompctl
+[ -f $ZDOTDIR/.zaliases ] && source $ZDOTDIR/.zaliases
+[ -f $ZDOTDIR/.zcompctl ] && source $ZDOTDIR/.zcompctl
 
 # Emacs style key binding
 bindkey -e
@@ -52,4 +52,4 @@ if [ -n "${REMOTEHOST}${SSH_CONNECTION}" ]; then
     PROMPT="%{[37m%}${HOST%%.*} ${PROMPT}"
 fi
 
-source $ZDOTDIR/.zshrc.mine
+[ -f $ZDOTDIR/.zshrc.mine ] && source $ZDOTDIR/.zshrc.mine
