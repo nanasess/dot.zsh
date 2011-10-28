@@ -30,7 +30,7 @@ setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt hist_verify
 
-HISTFILE=~/.zsh-history
+HISTFILE=$ZDOTDIR/.zsh-history
 HISTSIZE=10000
 SAVEHIST=10000000
 
