@@ -45,8 +45,11 @@ if [ ! -n "${TERM}" ]; then
     TERM=xterm-color
 fi
 
-PROMPT="%m:%n%% "
-RPROMPT="[%~]"
-SPROMPT="correct: %R -> %r ? "
+PROMPT="%{[31m%}%/%%%{[m%} "
+PROMPT2="%{[31m%}%_%%%{[m%} "
+SPROMPT="%{[31m%}%r is correct? [n,y,a,e]:%{[m%} "
+if [ -n "${REMOTEHOST}${SSH_CONNECTION}" ]; then
+    PROMPT="%{[37m%}${HOST%%.*} ${PROMPT}"
+fi
 
 source $ZDOTDIR/.zshrc.mine
