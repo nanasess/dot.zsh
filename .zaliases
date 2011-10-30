@@ -1,8 +1,8 @@
 # -*- mode:shell-script -*-
-alias ls="ls -vG"
-alias 'ls -al'="ls -alvG"
-alias less='less -X'
-alias emacsclient=$HOME/Applications/Emacs.app/Contents/MacOS/bin/emacsclient
+# alias ls="ls -vG"
+# alias 'ls -al'="ls -alvG"
+# alias less='less -X'
+# alias emacsclient=$HOME/Applications/Emacs.app/Contents/MacOS/bin/emacsclient
 
 ## see. https://gist.github.com/1244467
 ## Invoke the ``dired'' of current working directory in Emacs buffer.
