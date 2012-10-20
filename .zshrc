@@ -53,3 +53,4 @@ if [ -n "${REMOTEHOST}${SSH_CONNECTION}" ]; then
 fi
 
 [ -f $ZDOTDIR/.zshrc.mine ] && source $ZDOTDIR/.zshrc.mine
+[ -f $ZDOTDIR/eterm.zsh ] && source $ZDOTDIR/eterm.zsh
