@@ -70,11 +70,11 @@ function switch-to-line-mode-normal () {
 function switch-to-line-mode-insert () {
     switch-to-line-mode 'i'
 }
-function history-search-eterm () {
-    local buf="$BUFFER"
-    zle kill-buffer
-    osc_sel 'h' "$buf"
-}
+# function history-search-eterm () {
+#     local buf="$BUFFER"
+#     zle kill-buffer
+#     osc_sel 'h' "$buf"
+# }
 
 eterm_has evil && {
     zle -N switch-to-line-mode-normal
@@ -83,8 +83,8 @@ eterm_has evil && {
 zle -N switch-to-line-mode-insert
 bindkey '^[i' switch-to-line-mode-insert
 
-zle -N history-search-eterm
-bindkey '^R' history-search-eterm
+# zle -N history-search-eterm
+# bindkey '^R' history-search-eterm
 
 function _eterm_input_files () {
     local -a inputs; inputs=()
