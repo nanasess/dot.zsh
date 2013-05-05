@@ -4,3 +4,9 @@ export EDITOR=$HOME/Applications/Emacs.app/Contents/MacOS/bin/emacsclient
 
 export PATH=$HOME/bin:$HOME/.cabal/bin:/Library/Frameworks/HaskellPlatform.framework/bin:$HOME/Applications/UpTeX.app/teTeX/bin:/opt/local/lib/postgresql91/bin:/opt/local/bin:/usr/local/bin:$PATH
 export GISTY_ACCESS_TOKEN=0ed67465613675b60c7635f395b7d4da120c27dd
+
+export ORACLE_BASE=~/oracle
+export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/client_1
+export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
+export PATH=$ORACLE_HOME/bin:$PATH
+export NLS_LANG=japanese_japan.UTF8
