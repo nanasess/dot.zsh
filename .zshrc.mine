@@ -1,12 +1,12 @@
 # -*- mode:shell-script -*-
 
-export EDITOR=$HOME/Applications/Emacs.app/Contents/MacOS/bin/emacsclient
+export EDITOR=C:/emacs-24.4/bin/emacsclientw.exe
 
-export PATH=$HOME/bin:$HOME/.cabal/bin:$(brew --prefix josegonzalez/php/php53)/bin:/Library/Frameworks/HaskellPlatform.framework/bin:/usr/local/texlive/2014/bin/x86_64-darwin:/usr/local/bin:/opt/local/bin:$PATH
-export GISTY_ACCESS_TOKEN=0ed67465613675b60c7635f395b7d4da120c27dd
+# export PATH=$HOME/bin:$HOME/.cabal/bin:$(brew --prefix josegonzalez/php/php53)/bin:/Library/Frameworks/HaskellPlatform.framework/bin:/usr/local/texlive/2014/bin/x86_64-darwin:/usr/local/bin:/opt/local/bin:$PATH
+# export GISTY_ACCESS_TOKEN=0ed67465613675b60c7635f395b7d4da120c27dd
 
-export ORACLE_BASE=~/oracle
-export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/client_1
-export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
-export PATH=$ORACLE_HOME/bin:$PATH
-export NLS_LANG=japanese_japan.UTF8
+# export ORACLE_BASE=~/oracle
+# export ORACLE_HOME=$ORACLE_BASE/product/11.2.0/client_1
+# export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
+# export PATH=$ORACLE_HOME/bin:$PATH
+# export NLS_LANG=japanese_japan.UTF8
