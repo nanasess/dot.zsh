@@ -2,7 +2,7 @@
 alias ls="ls -v --color"
 alias 'ls -al'="ls -alv --color"
 alias less='less -X'
-alias emacsclient=C:/emacs-24.4/bin/emacsclientw.exe
+alias emacsclient=C:/emacs-24.5/bin/emacsclientw.exe
 alias open='explorer'
 
 ## see. https://gist.github.com/1244467

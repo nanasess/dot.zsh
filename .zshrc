@@ -80,6 +80,7 @@ if [ ! -n "${TERM}" ]; then
     TERM=xterm-color
 fi
 
+unsetopt PROMPT_SP
 PROMPT="%{[31m%}%~%%%{[m%} "
 PROMPT2="%{[31m%}%_%%%{[m%} "
 SPROMPT="%{[31m%}%r is correct? [n,y,a,e]:%{[m%} "
