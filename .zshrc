@@ -2,6 +2,8 @@
 #
 # dot.zshrc
 #
+
+[ -f $ZDOTDIR/.zplugrc ] && source $ZDOTDIR/.zplugrc
 [ -f $ZDOTDIR/.zaliases ] && source $ZDOTDIR/.zaliases
 [ -f $ZDOTDIR/.zcompctl ] && source $ZDOTDIR/.zcompctl
 

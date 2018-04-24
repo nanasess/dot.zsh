@@ -30,3 +30,19 @@ function cde () {
     echo "chdir to $EMACS_CWD"
     cd "$EMACS_CWD"
 }
+
+# function peco-history-selection() {
+#     BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+#     CURSOR=$#BUFFER
+#     zle reset-prompt
+# }
+
+# zle -N peco-history-selection
+# bindkey '^R' peco-history-selection
+
+function select-history() {
+  BUFFER=$(history -n -r 1 | fzf --no-sort +m --query "$LBUFFER" --prompt="History > ")
+  CURSOR=$#BUFFER
+}
+zle -N select-history
+bindkey '^r' select-history
