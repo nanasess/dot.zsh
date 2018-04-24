@@ -25,5 +25,9 @@ eval $(/usr/libexec/path_helper -s)
 source $HOME/.phpbrew/bashrc
 export PATH=$HOME/.rbenv/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/opt/texinfo/bin:$PATH
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # export PHPBREW_SET_PROMPT=1
+
+function git(){hub "$@"}
