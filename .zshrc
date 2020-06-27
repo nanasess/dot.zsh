@@ -54,3 +54,9 @@ fi
 
 [ -f $ZDOTDIR/.zshrc.mine ] && source $ZDOTDIR/.zshrc.mine
 [ -f $ZDOTDIR/eterm.zsh ] && source $ZDOTDIR/eterm.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# if [[ ! -n $TMUX ]]; then
+#     tmux new-session
+# fi
