@@ -17,13 +17,18 @@ export PERL_MB_OPT="--install_base \"$HOME/.cpan/CPAN\"";
 export PERL_MM_OPT="INSTALL_BASE=$HOME/.cpan/CPAN";
 
 export ASPNETCORE_ENVIRONMENT=Development
+export BAT_THEME=ansi-light
 
 autoload bashcompinit && bashcompinit
-source $HOME/lib/azure-cli/az.completion
+#source $HOME/lib/azure-cli/az.completion
 eval $(/usr/libexec/path_helper -s)
 
 source $HOME/.phpbrew/bashrc
 export PATH=$HOME/.rbenv/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.symfony/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+export PATH="$(brew --prefix openssl)/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which stack > /dev/null; then eval "$(stack --bash-completion-script stack)"; fi
 # export PHPBREW_SET_PROMPT=1
